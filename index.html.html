@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahadi Bin Ismail | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #050505; color: #e5e7eb; scroll-behavior: smooth; }
+        .glass { background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .neon-text { text-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6; }
+        
+        .hero-banner { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('background.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .marquee-container { overflow: hidden; white-space: nowrap; position: relative; }
+        .marquee-content { display: inline-flex; animation: scroll 40s linear infinite; }
+        .marquee-content:hover { animation-play-state: paused; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass">
+        <div class="text-xl font-bold tracking-tighter neon-text uppercase">M. ISMAIL</div>
+        <div class="space-x-6 hidden md:flex text-xs uppercase tracking-widest">
+            <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+            <a href="#certificates" class="hover:text-blue-400 transition">Certificates</a>
+            <a href="#education" class="hover:text-blue-400 transition">Education</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 hero-banner">
+        <img src="mahadi.jpg" alt="Mahadi Bin Ismail" class="w-44 h-44 rounded-full border-4 border-orange-500 shadow-[0_0_30px_rgba(249,115,22,0.4)] mb-8 object-cover">
+        
+        <div class="max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-bold mb-4 tracking-tighter uppercase leading-none">
+                Mahadi Bin <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500">Ismail</span>
+            </h1>
+            <p class="text-blue-400 uppercase tracking-[0.3em] text-sm mb-10 font-medium">Professional Bookkeeper | AI Automation Specialist</p>
+            
+            <div class="flex gap-6 justify-center">
+                <a href="CV Mahadi26 Without Picture.pdf.pdf" target="_blank" class="px-10 py-4 bg-orange-500 text-white font-bold rounded-full hover:bg-white hover:text-black transition-all transform hover:scale-105 shadow-xl">Get CV</a>
+                <a href="#contact" class="px-10 py-4 glass rounded-full border border-white/20 hover:border-orange-500 transition-all">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-20 max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-10 uppercase tracking-widest border-l-4 border-orange-500 pl-4">Professional Experience</h2>
+        <div class="space-y-8">
+            <!-- Mirpur Ceramic -->
+            <div class="glass p-8 rounded-2xl">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-orange-400">Assistant Accounts Officer</h3>
+                    <span class="text-gray-500 text-sm italic">Mirpur Ceramic Works Limited | Jan 2024 – Present</span>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                    <li>Manage daily accounting operations ensuring accuracy and compliance with company policies.</li>
+                    <li>Conducted bank liaison activities for routine banking operations.</li>
+                    <li>Prepare monthly financial reports and forecasts to assist budgeting decisions.</li>
+                    <li>Prepare and assist in monthly bank reconciliations and post entries in Tally software.</li>
+                    <li>Prepared and maintained inter-office loans and handled card sections for MCWL, SBL, and KCL.</li>
+                    <li>Implemented process optimizations reducing report generation time by 15% using Google Sheet.</li>
+                    <li>Generate Daily VAT Report, maintained petty cash summary reports, Daily Deposit Approval and Due Status Report to Management.</li>
+                </ul>
+            </div>
+
+            <!-- Mark International -->
+            <div class="glass p-8 rounded-2xl">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-blue-400">Senior Accounts Officer</h3>
+                    <span class="text-gray-500 text-sm italic">Mark International Money Exchange | 2023 – Dec 2023</span>
+                </div>
+                <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                    <li>Oversaw bookkeeping and bank reconciliations ensuring timely and accurate updates.</li>
+                    <li>Introduced automated workflows improving efficiency by 20% and Employee Management.</li>
+                    <li>Assisted in Currency Rates and regulatory compliance with a focus on Govt. Rules & processes.</li>
+                </ul>
+            </div>
+
+            <!-- Other Experience -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-lg font-bold text-orange-400">Customer Service Manager</h3>
+                    <p class="text-xs text-gray-500 italic mb-3">Digicon Technologies (Airtel) | Apr 2020 – Jan 2021</p>
+                    <ul class="text-xs text-gray-300 space-y-2 list-disc list-inside">
+                        <li>Led customer service teams, improving client satisfaction rates by 10%.</li>
+                        <li>Managed CRM systems and reporting on customer issues and resolutions.</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-lg font-bold text-blue-400">Cashier & POS Operator</h3>
+                    <p class="text-xs text-gray-500 italic mb-3">Shwapno Super Shop | Dec 2017 – Apr 2018</p>
+                    <ul class="text-xs text-gray-300 space-y-2 list-disc list-inside">
+                        <li>Handled cash transactions and maintained accurate cash registers during shifts.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Internships -->
+            <h3 class="text-xl font-bold mt-10 mb-6 uppercase tracking-widest border-l-4 border-blue-500 pl-4">Internships</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="font-bold text-gray-200">GAOTek Inc, USA</h4>
+                    <p class="text-xs text-orange-400">Business Development | Sep 2025 – Dec 2025</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="font-bold text-gray-200">Fragcy</h4>
+                    <p class="text-xs text-blue-400">Accountant & Media Operator | Dec 2017 – Mar 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Degrees & Certifications -->
+    <section id="certificates" class="py-20 max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-10 uppercase tracking-widest border-l-4 border-blue-500 pl-4">Memberships & Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="glass p-6 rounded-2xl border-l-4 border-orange-500">
+                <h4 class="text-sm font-bold uppercase text-orange-400">CMA Student | ICMAB</h4>
+                <p class="text-xs text-gray-400 leading-relaxed mt-1">Cost and Management Accountants (CMA) — 500 Marks Completed at the Institute of Cost and Management Accountants of Bangladesh.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border-l-4 border-blue-500">
+                <h4 class="text-sm font-bold uppercase text-blue-400">Income Tax Practitioner (ITP)</h4>
+                <p class="text-xs text-gray-400 leading-relaxed mt-1">Authorized for income tax-related services by the National Board of Revenue (NBR).</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <h4 class="text-sm font-bold uppercase">QuickBooks Certified ProAdvisor</h4>
+                <p class="text-xs text-gray-400 mt-1">Certified by Intuit for expertise in QuickBooks software.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <h4 class="text-sm font-bold uppercase">Xero Certified Advisor</h4>
+                <p class="text-xs text-gray-400 mt-1">Certified by Xero for proficiency in cloud-based accounting.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <h4 class="text-sm font-bold uppercase">Accounts Management System</h4>
+                <p class="text-xs text-gray-400 mt-1">Certified in advanced accounting systems and software management by Coders Trust.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <h4 class="text-sm font-bold uppercase">Trained in Tally & ERP</h4>
+                <p class="text-xs text-gray-400 mt-1">Formal training in Tally ERP software for business accounting and enterprise resource planning.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl md:col-span-2 border-b-2 border-blue-500">
+                <h4 class="text-sm font-bold uppercase text-blue-400">Professional MS Excel & Power BI Certification</h4>
+                <p class="text-xs text-gray-400 mt-1">Certified in advanced Microsoft Excel functions and Power BI for data analysis and visualization by Skill Course.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-20 bg-white/5">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-10 uppercase tracking-widest border-r-4 border-blue-500 pr-4 text-right">Academic Journey</h2>
+            <div class="space-y-6">
+                <!-- MBA -->
+                <div class="p-6 glass rounded-2xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-bold">MBA (Professional) - Finance & Banking</h3>
+                            <p class="text-sm text-blue-400">National University | Alhaj Mockbul Hossain University College</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-orange-500 font-bold">CGPA 3.63</span>
+                            <p class="text-[10px] text-gray-500 italic">2022 – 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BBA -->
+                <div class="p-6 glass rounded-2xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-lg font-bold">BBA (Professional) - Accounting & Information System</h3>
+                            <p class="text-sm text-blue-400">National University | Dhaka Commerce College</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-orange-500 font-bold">CGPA 3.51</span>
+                            <p class="text-[10px] text-gray-500 italic">2017 – 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- HSC & SSC -->
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 glass rounded-xl">
+                        <h4 class="text-xs font-bold uppercase tracking-widest">HSC | Business</h4>
+                        <p class="text-[11px] text-gray-300">GPA 4.50 | Dhaka Commerce College</p>
+                        <p class="text-[9px] text-gray-500 mt-1">2015 – 2017</p>
+                    </div>
+                    <div class="p-4 glass rounded-xl">
+                        <h4 class="text-xs font-bold uppercase tracking-widest">SSC | Business</h4>
+                        <p class="text-[11px] text-gray-300">GPA 4.72 | Monipur High School</p>
+                        <p class="text-[9px] text-gray-500 mt-1">2005 – 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-20 text-center glass">
+        <h2 class="text-2xl font-bold mb-8 uppercase tracking-widest">Contact</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-10 text-gray-300">
+            <a href="mailto:mahadiismail789@gmail.com" class="hover:text-orange-500 transition"><i class="fas fa-envelope mr-2"></i> mahadiismail789@gmail.com</a>
+            <a href="tel:+8801896216348" class="hover:text-blue-400 transition"><i class="fas fa-phone mr-2"></i> +880-1896-216348</a>
+            <a href="https://www.linkedin.com/in/mahadi-bin-ismail789" target="_blank" class="hover:text-blue-600 transition font-bold"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a>
+        </div>
+        <p class="text-[10px] text-gray-500 uppercase tracking-[0.5em]">238/A Ahmednagar, Mirpur-1, Dhaka</p>
+    </footer>
+
+</body>
+</html>
